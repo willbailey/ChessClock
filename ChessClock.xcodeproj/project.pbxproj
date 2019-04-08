@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F314A02A2259F2380057826F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314A0292259F2380057826F /* AppDelegate.swift */; };
-		F314A02C2259F2380057826F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314A02B2259F2380057826F /* ViewController.swift */; };
-		F314A02F2259F2380057826F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314A02D2259F2380057826F /* Main.storyboard */; };
+		F314A02C2259F2380057826F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314A02B2259F2380057826F /* MainViewController.swift */; };
 		F314A0312259F2390057826F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F314A0302259F2390057826F /* Assets.xcassets */; };
-		F314A0342259F2390057826F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314A0322259F2390057826F /* LaunchScreen.storyboard */; };
+		F314A03C2259F3FA0057826F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314A03B2259F3FA0057826F /* ClockView.swift */; };
+		F314A03E2259F4350057826F /* Pieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314A03D2259F4350057826F /* Pieces.swift */; };
+		F37D46DC225B14D700585660 /* snap1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F37D46DA225B14D700585660 /* snap1.wav */; };
+		F37D46DD225B14D700585660 /* snap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F37D46DB225B14D700585660 /* snap2.wav */; };
+		F37D46E0225B170200585660 /* ticktock.wav in Resources */ = {isa = PBXBuildFile; fileRef = F37D46DF225B170200585660 /* ticktock.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F314A0262259F2380057826F /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314A0292259F2380057826F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F314A02B2259F2380057826F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F314A02E2259F2380057826F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F314A02B2259F2380057826F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F314A0302259F2390057826F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F314A0332259F2390057826F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F314A0352259F2390057826F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F314A03B2259F3FA0057826F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		F314A03D2259F4350057826F /* Pieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pieces.swift; sourceTree = "<group>"; };
+		F37D46DA225B14D700585660 /* snap1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snap1.wav; sourceTree = "<group>"; };
+		F37D46DB225B14D700585660 /* snap2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snap2.wav; sourceTree = "<group>"; };
+		F37D46DF225B170200585660 /* ticktock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ticktock.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		F314A0282259F2380057826F /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
+				F37D46DF225B170200585660 /* ticktock.wav */,
+				F37D46DA225B14D700585660 /* snap1.wav */,
+				F37D46DB225B14D700585660 /* snap2.wav */,
 				F314A0292259F2380057826F /* AppDelegate.swift */,
-				F314A02B2259F2380057826F /* ViewController.swift */,
-				F314A02D2259F2380057826F /* Main.storyboard */,
+				F314A02B2259F2380057826F /* MainViewController.swift */,
 				F314A0302259F2390057826F /* Assets.xcassets */,
-				F314A0322259F2390057826F /* LaunchScreen.storyboard */,
 				F314A0352259F2390057826F /* Info.plist */,
+				F314A03B2259F3FA0057826F /* ClockView.swift */,
+				F314A03D2259F4350057826F /* Pieces.swift */,
 			);
 			path = ChessClock;
 			sourceTree = "<group>";
@@ -100,7 +109,7 @@
 				};
 			};
 			buildConfigurationList = F314A0212259F2380057826F /* Build configuration list for PBXProject "ChessClock" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,9 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F314A0342259F2390057826F /* LaunchScreen.storyboard in Resources */,
+				F37D46E0225B170200585660 /* ticktock.wav in Resources */,
+				F37D46DC225B14D700585660 /* snap1.wav in Resources */,
+				F37D46DD225B14D700585660 /* snap2.wav in Resources */,
 				F314A0312259F2390057826F /* Assets.xcassets in Resources */,
-				F314A02F2259F2380057826F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +145,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F314A02C2259F2380057826F /* ViewController.swift in Sources */,
+				F314A03E2259F4350057826F /* Pieces.swift in Sources */,
+				F314A02C2259F2380057826F /* MainViewController.swift in Sources */,
 				F314A02A2259F2380057826F /* AppDelegate.swift in Sources */,
+				F314A03C2259F3FA0057826F /* ClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F314A02D2259F2380057826F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F314A02E2259F2380057826F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F314A0322259F2390057826F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F314A0332259F2390057826F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F314A0362259F2390057826F /* Debug */ = {
@@ -292,7 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chillco.ChessClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chillco.ChessClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
